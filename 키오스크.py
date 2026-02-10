@@ -115,6 +115,7 @@ def run_store(window_width, names, prices, stocks):
                 break
             else:
                 while True:
+                    print_cancel_msg()
                     quantity = input_quantity()
                     if quantity == -1:
                         break
@@ -155,6 +156,7 @@ while is_all_zero_stock(stock_dict):
             break
         else:
             while True:
+                print_cancel_msg()
                 quantity = input_quantity()
                 if quantity == -1:
                     break
